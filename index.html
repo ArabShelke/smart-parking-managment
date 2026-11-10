@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Parking Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🚗 Smart Parking</h1>
+            <p>Parking Management System</p>
+        </header>
+
+        <nav>
+            <button class="nav-btn" onclick="showSection('dashboard')">Dashboard</button>
+            <button class="nav-btn" onclick="showSection('parking')">Park Vehicle</button>
+            <button class="nav-btn" onclick="showSection('exit')">Vehicle Exit</button>
+            <button class="nav-btn" onclick="showSection('slots')">Parking Slots</button>
+            <button class="nav-btn" onclick="showSection('history')">History</button>
+        </nav>
+
+        <main>
+
+            <!-- Dashboard -->
+            <section id="dashboard" class="section active">
+
+                <h2>Dashboard</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>Total Slots</h3>
+                        <p id="totalSlots">10</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Available</h3>
+                        <p id="availableSlots">10</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Occupied</h3>
+                        <p id="occupiedSlots">0</p>
+                    </div>
+
+                </div>
+                
+<div class="occupancy-panel">
+    <h3>Parking Occupancy</h3>
+
+    <div class="progress-track">
+        <div id="occupancyBar" class="progress-fill"></div>
+    </div>
+
+    <p id="occupancyText">0% Occupied</p>
+</div>
+
+
+            </section>
+
+
+            <!-- Park Vehicle -->
+            <section id="parking" class="section">
+
+                <h2>Park Vehicle</h2>
+
+                <form id="parkingForm">
+
+                    <input
+                        type="text"
+                        id="vehicleNumber"
+                        placeholder="Vehicle Number"
+                        required
+                    >
+
+                    <select id="vehicleType" required>
+                        <option value="">Select Vehicle Type</option>
+                        <option value="Car">Car</option>
+                        <option value="Bike">Bike</option>
+                    </select>
+
+                    <button type="submit">
+                        Park Vehicle
+                    </button>
+
+                </form>
+
+                <p id="parkingMessage"></p>
+                
+<hr style="margin: 25px 0;">
+
+<h3>Search Parked Vehicle</h3>
+
+<form id="searchForm">
+    <input
+        type="text"
+        id="searchVehicleNumber"
+        placeholder="Enter vehicle number"
+        required
+    >
+
+    <button type="submit">Search Vehicle</button>
+</form>
+
+<p id="searchMessage"></p>
+
+
+            </section>
+
+
+            <!-- Vehicle Exit -->
+            <section id="exit" class="section">
+
+                <h2>Vehicle Exit</h2>
+
+                <form id="exitForm">
+
+                    <input
+                        type="text"
+                        id="exitVehicleNumber"
+                        placeholder="Vehicle Number"
+                        required
+                    >
+
+                    <button type="submit">
+                        Exit Vehicle
+                    </button>
+
+                </form>
+
+                <p id="exitMessage"></p>
+                
+<div class="card" style="margin-top: 20px;">
+    <h3>Calculate Parking Fee</h3>
+
+    <label for="entryTime">Entry Time:</label>
+    <input type="datetime-local" id="entryTime">
+
+    <label for="exitTime">Exit Time:</label>
+    <input type="datetime-local" id="exitTime">
+
+    <button type="button" onclick="calculateParkingFee()">
+        Calculate Fee
+    </button>
+
+    <p id="feeResult"></p>
+</div>
+
+
+                
+<div class="card" style="margin-top: 20px;">
+    <h3>Parking Fee Rate</h3>
+    <p>₹30 / hour</p>
+    <small>Fee calculation will be added to vehicle exit.</small>
+</div>
+
+
+            </section>
+
+
+            <!-- Parking Slots -->
+            <section id="slots" class="section">
+
+                <h2>Parking Slots</h2>
+
+                <div id="slotContainer" class="slots"></div>
+
+            </section>
+
+
+            <!-- History -->
+            <section id="history" class="section">
+
+                <h2>Parking History</h2>
+
+                <div id="historyContainer">
+                    <p>No parking history available.</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

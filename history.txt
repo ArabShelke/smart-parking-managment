@@ -1,0 +1,12 @@
+Vehicle: MH12AB1234 | Type: car | Slot: 1 | Entry: 10:30 | Exit: 13:30 | Fee: Rs. 90.00
+Vehicle: MH1234 | Type: Car | Slot: 1 | Entry: 10:30 | Exit: 15:30 | Fee: Rs. 150.00
+Vehicle: MH12AB1234 | Type: Car | Slot: 1 | Entry: 10:30 | Exit: 13:30 | Fee: Rs. 90.00
+Vehicle: mh123 | Type: Car | Slot: 1 | Entry: 10:30 | Exit: 11:30 | Fee: Rs. 30.00
+Vehicle: mh123 | Type: Car | Slot: 1 | Entry: 10:30 | Exit: 12:30 | Fee: Rs. 60.00
+Vehicle: MH1111 | Type: Car | Slot: 1 | Entry: 21:06 | Exit: 21:06 | Fee: Rs. 0.00
+Vehicle: MH123 | Type: Car | Slot: 1 | Entry: 15:49 | Exit: 15:50 | Fee: Rs. 0.50
+Vehicle: MH101 | Type: Bike | Slot: 7 | Entry: 15:49 | Exit: 15:54 | Fee: Rs. 2.50
+Vehicle: MH123 | Type: Car | Slot: 1 | Entry: 11:15 | Exit: 11:17 | Fee: Rs. 1.00
+Vehicle: MH123 | Type: Car | Slot: 1 | Entry: 10:20 | Exit: 10:23 | Fee: Rs. 1.50
+Vehicle: MH123 | Type: Car | Slot: 1 | Entry: 10:52 | Exit: 10:53 | Fee: Rs. 0.50
+ 
